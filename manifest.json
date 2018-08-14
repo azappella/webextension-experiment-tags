@@ -1,0 +1,31 @@
+{
+  "manifest_version": 2,
+  "name": "Firefox Bookmark Webhooks",
+  "version": "0.1",
+  "description": "Enables the creation of custom webhooks (i.e. API endpoints) for each bookmark event.",
+  "homepage_url": "https://github.com/azappella/webextension-firefox-bookmark-webhooks",
+  "permissions": [
+    "bookmarks",
+    "tabs"
+  ],
+  "icons": {
+    "64": "icons/tags-icon.png"
+  },
+  "browser_action": {
+    "default_icon": "icons/tags.png",
+    "default_title": "Tags!"
+  },
+  "background": {
+    "scripts": ["src/background.js"]
+  },
+  "experiment_apis": {
+    "tags": {
+      "schema": "experiments/tags/schema.json",
+      "parent": {
+        "scopes": ["addon_parent"],
+        "script": "experiments/tags/api.js",
+        "paths": [["experiments", "tags"]]
+      }
+    }
+  }
+}

@@ -1,0 +1,52 @@
+[
+  {
+    "namespace": "experiments.tags",
+    "description": "Tags",
+    "functions": [
+      {
+        "name": "add",
+        "type": "function",
+        "async": true,
+        "description": "adds two numbers together",
+        "parameters": [
+          {
+            "type": "integer",
+            "name": "x",
+            "description": "x"
+          },
+          {
+            "type": "integer",
+            "name": "y",
+            "description": "y"
+          }
+        ]
+      },
+      {
+        "name": "getURIsForTag",
+        "type": "function",
+        "async": true,
+        "description": "This method retrieves all URIs set for the given tag.",
+        "parameters": [
+          {
+            "type": "string",
+            "name": "tag",
+            "description": "The tag name."
+          }
+        ]
+      },
+      {
+        "name": "getTagsForURI",
+        "type": "function",
+        "async": true,
+        "description": "This method retrieves all tags set for the given URI.",
+        "parameters": [
+          {
+            "type": "string",
+            "name": "URI",
+            "description": "The URI for which to return the tags."
+          }
+        ]
+      }
+    ]
+  }
+]
