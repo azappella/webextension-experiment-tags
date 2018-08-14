@@ -3,7 +3,7 @@
   "name": "Firefox Bookmark Webhooks",
   "version": "0.1",
   "description": "Enables the creation of custom webhooks (i.e. API endpoints) for each bookmark event.",
-  "homepage_url": "https://github.com/azappella/webextension-firefox-bookmark-webhooks",
+  "homepage_url": "https://github.com/azappella/webextension-experiment-tags",
   "permissions": [
     "bookmarks",
     "tabs"
