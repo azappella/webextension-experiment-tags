@@ -36,14 +36,14 @@ const tags = browser.experiments.tags.getTagsForURI("http://example.com/");
 
 ## References
 
-[Firefox issue tracker #1225916](https://bugzilla.mozilla.org/show_bug.cgi?id=1225916#c12)
-[StackOverflow Question About Getting Bookmark Tags](https://stackoverflow.com/questions/42294207/get-bookmark-tags)
-[WebExtensions API currently not supporting bookmarks tags](https://discourse.mozilla.org/t/webextensions-api-currently-not-supporting-bookmarks-tags/22677)
-[WebExtensions API Development](https://firefox-source-docs.mozilla.org/toolkit/components/extensions/webextensions/index.html)
-[Using The Places Tagging Service](https://developer.mozilla.org/en-US/docs/Mozilla/Tech/Places/Using_the_Places_tagging_service)
-[nsITaggingService](https://developer.mozilla.org/en-US/docs/Mozilla/Tech/XPCOM/Reference/Interface/nsITaggingService)
-[XPConnectWrappers](https://developer.mozilla.org/en-US/docs/Mozilla/Tech/XPCOM/Language_bindings/XPConnect/XPConnect_wrappers)
-[XPConnectWrappers More Information](http://mdn.beonex.com/en/XPConnect_wrappers.html)
+- [StackOverflow Question About Getting Bookmark Tags](https://stackoverflow.com/questions/42294207/get-bookmark-tags)
+- [Firefox issue tracker #1225916](https://bugzilla.mozilla.org/show_bug.cgi?id=1225916#c12)
+- [WebExtensions API currently not supporting bookmarks tags](https://discourse.mozilla.org/t/webextensions-api-currently-not-supporting-bookmarks-tags/22677)
+- [WebExtensions API Development](https://firefox-source-docs.mozilla.org/toolkit/components/extensions/webextensions/index.html)
+- [Using The Places Tagging Service](https://developer.mozilla.org/en-US/docs/Mozilla/Tech/Places/Using_the_Places_tagging_service)
+- [nsITaggingService](https://developer.mozilla.org/en-US/docs/Mozilla/Tech/XPCOM/Reference/Interface/nsITaggingService)
+- [XPConnectWrappers](https://developer.mozilla.org/en-US/docs/Mozilla/Tech/XPCOM/Language_bindings/XPConnect/XPConnect_wrappers)
+- [XPConnectWrappers More Information](http://mdn.beonex.com/en/XPConnect_wrappers.html)
 
 ## Disclaimer
 
