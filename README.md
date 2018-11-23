@@ -25,7 +25,7 @@ You should see a new toolbar icon that resembles a tag.
 ```
 const uris = browser.experiments.tags.getURIsForTag("tag 1");
 
-// Returns an an array of URIs
+// Returns an array of URIs
 ```
 
 `getTagsForURI(URI)` - Getting all tags associated with a URL
