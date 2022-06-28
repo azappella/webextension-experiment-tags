@@ -1,18 +1,18 @@
 
 # WebExtension Experiment For Firefox Tags
 
-Since the [WebExtensions API does not currently support bookmarks tags](https://bugzilla.mozilla.org/show_bug.cgi?id=1225916#c12), I created this [WebExtension Experiment API](https://firefox-source-docs.mozilla.org/toolkit/components/extensions/webextensions/index.html) to expose some of the internal Firefox API for tags, thus enabling users/developers to access/read/retrieve bookmark tags in their own extensions.
+Since the WebExtension API does not currently support bookmarks tags (see [bugzilla thread](https://bugzilla.mozilla.org/show_bug.cgi?id=1225916#c12), I created this [WebExtension Experiment API](https://firefox-source-docs.mozilla.org/toolkit/components/extensions/webextensions/index.html) to expose some of the internal Firefox API for tags, thus enabling users/developers to access & retrieve bookmark tags in their own extensions.
 
-NOTE: It is very likely that this API will not work in the near future, as there are plans to [merge the tagging API with the bookmarking API](https://bugzilla.mozilla.org/show_bug.cgi?id=1448885).
+There is an example extension (in the /src folder) which shows how to use the experimental API in a background.js script.
 
-## How to install this API and WebExtension
+## How to install this API and the associated WebExtension
 
 1. Run a non-release build (Nightly or unbranded Beta/Release) version 59
    (or newer) build.
 2. Navigate to `about:config` 
-  - set the pref `extensions.legacy.enabled` to
-   `true` 
-  - set the pref `extensions.experiments.enabled` to `true`
+   - set the pref `extensions.legacy.enabled` to
+   `true`
+   - set the pref `extensions.experiments.enabled` to `true`
 3.  Navigate to `about:debugging`, choose
    "Load Temporary Add-on" and select `manifest.json`
    in this project.  You should see a new entry in the list of

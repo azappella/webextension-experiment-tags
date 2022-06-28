@@ -1,15 +1,31 @@
 browser.browserAction.onClicked.addListener(() => {
-  console.log('Testing tags APIs...', browser.experiments);
-  // browser.experiments.tags.getTagsForURI("https://www.wikipedia.org/").then(result => console.log('getTagsForURI', result))
-  // browser.experiments.tags.getURIsForTag("knowledge").then(result => console.log('getURIsForTag', result));
+  console.log('browserAction.onClicked', browser.experiments);
+
+  browser.experiments.tags.getTagsForURI("https://www.wikipedia.org/")
+    .then(result => console.log('getTagsForURI', result))
+    .catch(e => {
+        console.error('getURIsForTagError', e.message, e);
+        return e;
+    });
+
+  browser.experiments.tags.getURIsForTag("firefox")
+    .then(result => {
+        console.log('getURIsForTag', result);
+        return result;
+    })
+    .catch(e => {
+        console.error('getURIsForTagError', e.message, e);
+        return e;
+    })
 });
+
 
 function handleBookmarkEvent(id, bookmark) {
     console.log(id, bookmark);
-    setTimeout(() => getTags(id), 10000);
+    setTimeout(() => getTagsById(id), 10000);
 }
 
-function getTags(bookmarkId) {
+function getTagsById(bookmarkId) {
     browser.bookmarks.get(bookmarkId).then(bookmarks => {
         const promises = bookmarks.map(b => {
             console.log(b.url);
