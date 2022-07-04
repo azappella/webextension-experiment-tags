@@ -7,7 +7,7 @@ There is an example extension (in the /src folder) which shows how to use the ex
 
 ## How to install this API and the associated WebExtension
 
-1. Run a non-release build (Nightly or unbranded Beta/Release), the latest tested working version is 103.0b2 
+1. Run a non-release build (Nightly or unbranded Beta/Release), the latest tested working version is 103.0b2
    (or newer) build.
 2. Navigate to `about:config` 
    - set the pref `extensions.legacy.enabled` to
@@ -22,10 +22,10 @@ You should see a new toolbar icon that resembles a tag.
 
 ## API
 
-`getURIsForTag(tag)` - Finding all URLs with a given tag
+`getURIsForTags(tags)` - Finding all URLs with a given tag
 
 ```
-const uris = browser.experiments.tags.getURIsForTag("tag 1");
+const uris = browser.experiments.tags.getURIsForTags(["tag 1","tag 2"]);
 
 // Returns an array of URIs
 ```
