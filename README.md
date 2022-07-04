@@ -44,10 +44,13 @@ const tags = browser.experiments.tags.getTagsForURI("http://example.com/");
 - [StackOverflow Question About Getting Bookmark Tags](https://stackoverflow.com/questions/42294207/get-bookmark-tags)
 - [WebExtensions API currently not supporting bookmarks tags](https://discourse.mozilla.org/t/webextensions-api-currently-not-supporting-bookmarks-tags/22677)
 - [WebExtensions API Development](https://firefox-source-docs.mozilla.org/toolkit/components/extensions/webextensions/index.html)
-- [Using The Places Tagging Service](https://developer.mozilla.org/en-US/docs/Mozilla/Tech/Places/Using_the_Places_tagging_service)
-- [nsITaggingService](https://developer.mozilla.org/en-US/docs/Mozilla/Tech/XPCOM/Reference/Interface/nsITaggingService)
-- [XPConnectWrappers](https://developer.mozilla.org/en-US/docs/Mozilla/Tech/XPCOM/Language_bindings/XPConnect/XPConnect_wrappers)
-- [XPConnectWrappers More Information](http://mdn.beonex.com/en/XPConnect_wrappers.html)
+- [PlacesUtils.bookmarks.fetch implementation](https://searchfox.org/mozilla-central/source/toolkit/components/places/Bookmarks.jsm#1507)
+- [Firefox Places Architecture Overview](https://firefox-source-docs.mozilla.org/browser/places/architecture-overview.html)
+- [PlacesUtils.jsm module source code](https://searchfox.org/mozilla-central/source/toolkit/components/places/PlacesUtils.jsm)
+- ~~[Using The Places Tagging Service](https://developer.mozilla.org/en-US/docs/Mozilla/Tech/Places/Using_the_Places_tagging_service)~~
+- ~~[nsITaggingService](https://developer.mozilla.org/en-US/docs/Mozilla/Tech/XPCOM/Reference/Interface/nsITaggingService)~~
+- ~~[XPConnectWrappers](https://developer.mozilla.org/en-US/docs/Mozilla/Tech/XPCOM/Language_bindings/XPConnect/XPConnect_wrappers)~~
+- ~~[XPConnectWrappers More Information](http://mdn.beonex.com/en/XPConnect_wrappers.html)~~
 
 ## Disclaimer
 
