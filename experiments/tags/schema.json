@@ -4,15 +4,16 @@
     "description": "Tags",
     "functions": [
       {
-        "name": "getURIsForTag",
+        "name": "getURIsForTags",
         "type": "function",
         "async": true,
-        "description": "This method retrieves all URIs set for the given tag.",
+        "description": "This method retrieves all URIs set for the given tags.",
         "parameters": [
           {
-            "type": "string",
-            "name": "tag",
-            "description": "The tag name."
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           }
         ]
       },

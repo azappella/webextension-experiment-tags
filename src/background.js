@@ -8,13 +8,13 @@ browser.browserAction.onClicked.addListener(() => {
         return e;
     });
 
-  browser.experiments.tags.getURIsForTag("firefox")
+  browser.experiments.tags.getURIsForTags(["firefox","source code"])
     .then(result => {
-        console.log('getURIsForTag', result);
+        console.log('getURIsForTags', result);
         return result;
     })
     .catch(e => {
-        console.error('getURIsForTagError', e.message, e);
+        console.error('getURIsForTagsError', e.message, e);
         return e;
     })
 });

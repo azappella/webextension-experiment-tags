@@ -18,12 +18,13 @@ this.tags = class extends ExtensionAPI {
     return {
       experiments: {
         tags: {
-          async getURIsForTag(tag) {
+
+          async getURIsForTags(tags) {
             const urls = [];
             try {
               // Implementation of PlacesUtils.bookmark.fetch can be found below:
               // - https://searchfox.org/mozilla-central/source/toolkit/components/places/Bookmarks.jsm#1507
-              await PlacesUtils.bookmarks.fetch({ tags: [tag] }, b => urls.push(b.url));
+              await PlacesUtils.bookmarks.fetch({ tags: tags }, b => urls.push(b.url));
             } catch (error) {
               return JSON.stringify(error.message);
             }
